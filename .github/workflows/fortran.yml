@@ -15,4 +15,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        gfortran --version
+    - name: Install gfortran
+      run: |
+         sudo apt-get install gfortran-9
+         gfortran --version
