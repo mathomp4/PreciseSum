@@ -6,7 +6,7 @@
 FC = gfortran
 
 FOPTS = -g
-FOPTS = --coverage -pg -g
+#FOPTS = --coverage -pg -g
 #FOPTS = -O3 -qopt-report0 -ftz -align all -fno-alias -qno-offload     -convert big_endian -fPIC -fpe0 -fp-model source  -align dcommons
 
 all: test.exe

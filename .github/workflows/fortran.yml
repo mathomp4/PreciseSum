@@ -20,4 +20,9 @@ jobs:
          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
          sudo apt update
          sudo apt-get install gfortran-9
-         gfortran-9 --version
+    - name: Show gfortran version
+      run: gfortran-9 --version
+    - name: Build
+      run: make FC=gfortran-9
+    - name: Run
+      run: ./text.exe
