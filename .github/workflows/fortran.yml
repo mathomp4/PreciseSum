@@ -24,5 +24,7 @@ jobs:
       run: gfortran-9 --version
     - name: Build
       run: make FC=gfortran-9
+    - name: List files
+      run: ls
     - name: Run
       run: ./text.exe
