@@ -17,5 +17,7 @@ jobs:
         echo test, and deploy your project.
     - name: Install gfortran
       run: |
+         sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+         sudo apt update
          sudo apt-get install gfortran-9
          gfortran --version
