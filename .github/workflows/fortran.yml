@@ -27,4 +27,4 @@ jobs:
     - name: List files
       run: ls
     - name: Run
-      run: ./text.exe
+      run: './text.exe'
